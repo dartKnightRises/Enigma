@@ -1,5 +1,5 @@
 name: enigma
-description: "A new Flutter project."
+description: "Enigma is a secure data storage application designed to safeguard your sensitive information and credentials. With Enigma, you can trust that your data remains private and secure, protected by advanced cryptographic techniques."
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.6
+
 
 dev_dependencies:
   flutter_test:
