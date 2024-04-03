@@ -1,31 +1,35 @@
 import 'package:flutter/material.dart';
 
+import 'package:get/get.dart';
+
+import 'app_router.dart';
+import 'local_auth/auth_controller.dart';
+
+
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
+
+
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final AuthController authController = Get.put(AuthController());
+
+   MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(),
+    return GetMaterialApp(
+      
+      debugShowCheckedModeBanner: false,
+      initialBinding: BindingsBuilder(() {
+        Get.put(AuthController());
+      }),
+      initialRoute: Routes.landing,
+      getPages: Routes.routes,
+
+
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
 
