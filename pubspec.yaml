@@ -12,7 +12,10 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.6
-
+  local_auth: ^2.2.0
+  get: ^4.6.6
+  google_fonts: ^6.2.1
+#  restart_app: ^1.2.1
 
 dev_dependencies:
   flutter_test:
