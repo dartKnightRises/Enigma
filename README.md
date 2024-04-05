@@ -1,4 +1,4 @@
-# Enigma
+# Enigma - Chapter 1: LocalAuthorization
 
 Enigma is a secure data storage application designed to safeguard your sensitive information and credentials. With Enigma, you can trust that your data remains private and secure, protected by advanced cryptographic techniques.
 
@@ -13,7 +13,28 @@ Enigma is a secure data storage application designed to safeguard your sensitive
 
 ## Installation
 
-To use Enigma, simply [download](#) the latest release from our GitHub repository and follow the installation instructions for your operating system.
+Follow these steps to get started with the "Enigma's Local Authorization" Flutter project:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/dartKnightRises/Enigma.git
+
+2. **Navigate to Project Directory:**
+   ```bash
+   cd Enigma
+
+3. **Checkout the ToggleBrightness Branch:**
+   ```bash
+   git checkout LocalAuthorization
+
+4. **Install Dependencies::**
+   ```bash
+   flutter pub get
+
+5. **Run the App:**
+   ```bash
+   flutter run
+
 
 ## Usage
 
